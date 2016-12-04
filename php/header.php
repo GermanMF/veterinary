@@ -1,6 +1,6 @@
 <?php
 $path = pathinfo($_SERVER['REQUEST_URI']);
-if($path['dirname'] == '\\'){
+if($path['dirname'] == '\\' || $path['dirname'] == '/bdVeterinaria'){
 	echo '
 	<head>
 		<title>Magic Pets | Veterinaria</title>

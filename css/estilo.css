@@ -21,10 +21,11 @@ label.active{
 *{
 	margin:0;
 	padding: 0;
+		color: #ddd;
 }
 
 h2{
-	font-family: PaytoneOne;
+	font-family: "PaytoneOne";
 }
 
 .mButtons{
@@ -43,7 +44,7 @@ h2{
 }
 
 .bgBlue{
-	background-color: #0074D9;
+	background-color: #2e7d32;
 }
 
 .cYellow{
