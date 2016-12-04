@@ -1,0 +1,144 @@
+@import url(../fonts/PaytoneOne.ttf);
+
+@font-face{
+	font-family: PaytoneOne;
+	src: url(../fonts/PaytoneOne.ttf);
+}
+
+.input-field .prefix.active{
+	color: #ef6c00!important;
+}
+
+.active {
+	border-bottom: #ef6c00!important;
+	box-shadow: #ef6c00!important;
+}
+
+label.active{
+	color: #ef6c00!important;	
+}
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+h2{
+	font-family: PaytoneOne;
+}
+
+.mButtons{
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+.pButtons{
+	padding-right: 2%;
+	padding-left: 2%;
+}
+
+.fForm{
+	padding-left: 40%;
+	padding-right: 40%;
+}
+
+.bgBlue{
+	background-color: #0074D9;
+}
+
+.cYellow{
+	color: #FFDC00;
+}
+
+.fTitle{
+	font-family: "PaytoneOne";
+}
+
+.fHeight{
+	height: 100vh;
+}
+
+.fWidth{
+	width: 100%;
+}
+
+.fSize10{
+	font-size: 10em;
+}
+
+.fSize9{
+	font-size: 9em;
+}
+
+.fSize8{
+	font-size: 8em;
+}
+
+.fSize7{
+	font-size: 7em;
+}
+
+.fSize6{
+	font-size: 6em;
+}
+
+.fSize5{
+	font-size: 5em;
+}
+
+.fSize4{
+	font-size: 4em;
+}
+
+.fSize3{
+	font-size: 3em;
+}
+
+.fSize2{
+	font-size: 2em;
+}
+
+.pTop10{
+	padding-top: 10%;
+}
+
+.pTop5{
+	padding-top: 5%;
+}
+
+.pTop4{
+	padding-top: 4%;
+}
+
+.pTop2{
+	padding-top: 2%;
+}
+
+.pTop1{
+	padding-top: 1%;
+}
+
+
+/*@media(min-width: 320px) and (max-width: 1024px){
+	.pButtons{
+		padding-right: 20%;
+		padding-left: 20%;
+	}
+
+	.fForm{
+		padding-left:30%;
+		padding-right: 30%;
+	}
+	}*/
+
+	body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+		width: 100%;
+	}
+
+	section{
+		padding: 5%;
+	}
