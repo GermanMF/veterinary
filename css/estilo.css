@@ -4,6 +4,11 @@
 	font-family: PaytoneOne;
 	src: url(../fonts/PaytoneOne.ttf);
 }
+*{
+	margin:0;
+	padding: 0;
+		color: #ddd;
+}
 
 .input-field .prefix.active{
 	color: #ef6c00!important;
@@ -18,10 +23,8 @@ label.active{
 	color: #ef6c00!important;	
 }
 
-*{
-	margin:0;
-	padding: 0;
-		color: #ddd;
+.hid{
+	display: none;
 }
 
 h2{
@@ -31,6 +34,11 @@ h2{
 .mButtons{
 	margin-top: 1%;
 	margin-bottom: 1%;
+}
+
+.pSides{
+	padding-left: 20%;
+	padding-right: 20%;
 }
 
 .pButtons{
