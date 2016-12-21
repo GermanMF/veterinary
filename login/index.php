@@ -2,6 +2,11 @@
 <html>
 <?php include '../php/header.php'; ?>
 <body class="bgBlue">
+	<div class="bgLoader">
+		<div class="loader">
+
+		</div>
+	</div>
 	<section id="f1">
 		<form id="form1" class="row" method="post" enctype="application/x-www-form-urlencoded" name="form1">
 			<h2 class="center row">
@@ -79,14 +84,46 @@
 		$("#registro").on('click', function(event) {
 			$("#f1").fadeOut('fast', function() {
 				$("#f2").css('display','flex').hide().fadeIn();
+				$("#form1")[0].reset();
+				$("label").removeClass('active');
 			});
 		});
 
 		$("#loginr").on('click', function(event) {
 			$("#f2").fadeOut('fast', function() {
 				$("#f1").css('display','flex').hide().fadeIn();
+				$("#form2")[0].reset();
+				$("label").removeClass('active');
 			});
 		});
+	});
+
+
+	$("#form1").submit(function(){
+		$.ajax({
+			url: '../php/login.php?case=1',
+			type:'POST',
+			data: $(this).serialize(),
+			success: function(data){
+				if(data == '1'){
+					Materialize.toast("Logueado correctamente", 3000);
+					$("#form1")[0].reset();
+					$(".bgLoader").css('display','flex').hide().fadeIn();
+					setTimeout(function(){
+						window.location.replace("../"); 
+					},2000);
+				}
+				else if(data == '2'){
+					Materialize.toast("Error en usuario y/o contraseña", 3000);
+				}
+				else{
+					Materialize.toast("Rellena completamente el formulario", 3000);
+				}
+			},
+			error: function(){
+			}
+		});
+		return false;
 	});
 
 	$("#form2").submit(function() {
@@ -114,30 +151,5 @@
 		});
 		return false;
 	});
-
-	$("#form1").submit(function(){
-		$.ajax({
-			url: '../php/login.php?case=1',
-			type:'POST',
-			data: $(this).serialize(),
-			success: function(data){
-				if(data == '1'){
-					Materialize.toast("Logueado correctamente", 3000);
-					$("#form1")[0].reset();
-					setTimeout( function(){window.location.replace("../"); },2000);
-				}
-				else if(data == '2'){
-					Materialize.toast("Error en usuario y/o contraseña", 3000);
-				}
-				else{
-					Materialize.toast("Rellena completamente el formulario", 3000);
-				}
-			},
-			error: function(){
-			}
-		});
-		return false;
-	});
-
 </script>
 </html>

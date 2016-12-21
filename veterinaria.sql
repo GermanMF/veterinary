@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 20-12-2016 a las 23:50:14
+-- Tiempo de generación: 21-12-2016 a las 05:38:42
 -- Versión del servidor: 10.1.19-MariaDB
 -- Versión de PHP: 5.6.28
 
@@ -141,6 +141,28 @@ CREATE TABLE `raza` (
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE `usuario` (
+  `idUsuario` int(2) UNSIGNED ZEROFILL NOT NULL,
+  `nombre` varchar(15) NOT NULL,
+  `password` char(40) NOT NULL,
+  `fechaLog` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`idUsuario`, `nombre`, `password`, `fechaLog`) VALUES
+(01, 'Germán', 'fbd5c4e21f715ae152acdd465b3e5bcf3077d0fd', '2016-12-21 04:30:28'),
+(02, 'Cecilia', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '2016-12-21 05:30:27'),
+(03, 'Karina', '7110eda4d09e062aa5e4a390b0a572ac0d2c0220', '2016-12-21 05:36:40');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `vacuna`
 --
 
@@ -222,6 +244,12 @@ ALTER TABLE `raza`
   ADD PRIMARY KEY (`idRaza`);
 
 --
+-- Indices de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  ADD PRIMARY KEY (`idUsuario`);
+
+--
 -- Indices de la tabla `vacuna`
 --
 ALTER TABLE `vacuna`
@@ -279,6 +307,11 @@ ALTER TABLE `propietario`
 --
 ALTER TABLE `raza`
   MODIFY `idRaza` int(3) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT;
+--
+-- AUTO_INCREMENT de la tabla `usuario`
+--
+ALTER TABLE `usuario`
+  MODIFY `idUsuario` int(2) UNSIGNED ZEROFILL NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT de la tabla `vacuna`
 --
