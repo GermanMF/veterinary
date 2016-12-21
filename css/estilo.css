@@ -7,7 +7,32 @@
 *{
 	margin:0;
 	padding: 0;
-		color: #ddd;
+	color: #ddd;
+}
+
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+}
+
+section{
+	padding: 5%;
+}
+
+
+#loginr{
+	border-radius: 200px 200px 200px 200px;
+}
+
+.mTop7{
+	margin-top: 7%;
+}
+
+.mTop5{
+	margin-top: 5%;
 }
 
 .input-field .prefix.active{
@@ -39,11 +64,6 @@ h2{
 .pSides{
 	padding-left: 20%;
 	padding-right: 20%;
-}
-
-.pButtons{
-	padding-right: 2%;
-	padding-left: 2%;
 }
 
 .fForm{
@@ -128,26 +148,21 @@ h2{
 }
 
 
-/*@media(min-width: 320px) and (max-width: 1024px){
+@media(min-width: 320px) and (max-width: 768px){
+	
+	.fSize4{
+		font-size: 3em;
+	}
+
+	.fSize8{
+		font-size: 5em;
+	}
+
+	.mTop5{
+		margin-top: 10%;
+	}
+
 	.pButtons{
-		padding-right: 20%;
-		padding-left: 20%;
+		margin-top: 10%;
 	}
-
-	.fForm{
-		padding-left:30%;
-		padding-right: 30%;
-	}
-	}*/
-
-	body{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		height: 100vh;
-		width: 100%;
-	}
-
-	section{
-		padding: 5%;
-	}
+}
