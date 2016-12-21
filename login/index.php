@@ -100,10 +100,40 @@
 				}
 				else if(data == '2'){
 					Materialize.toast("Registro correcto", 3000);
+					$("#form2")[0].reset();
+				}
+				else if(data == '3'){
+					Materialize.toast("Usuario ya existente", 3000);
+				}
+				else{
+					Materialize.toast("Rellena completamente el formulario", 3000);
 				}
 			},
-			error: function(data){
-				alert("mal" + data);
+			error: function(){
+			}
+		});
+		return false;
+	});
+
+	$("#form1").submit(function(){
+		$.ajax({
+			url: '../php/login.php?case=1',
+			type:'POST',
+			data: $(this).serialize(),
+			success: function(data){
+				if(data == '1'){
+					Materialize.toast("Logueado correctamente", 3000);
+					$("#form1")[0].reset();
+					setTimeout( function(){window.location.replace("../"); },2000);
+				}
+				else if(data == '2'){
+					Materialize.toast("Error en usuario y/o contraseña", 3000);
+				}
+				else{
+					Materialize.toast("Rellena completamente el formulario", 3000);
+				}
+			},
+			error: function(){
 			}
 		});
 		return false;
