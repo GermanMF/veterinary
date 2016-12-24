@@ -4,13 +4,33 @@
 	font-family: PaytoneOne;
 	src: url(../fonts/PaytoneOne.ttf);
 }
+
 *{
 	margin:0;
 	padding: 0;
-	color: #ddd;
+	color: #fff !important;
 }
 
-body{
+
+section{
+	padding: 5%;
+}
+
+header, main, footer {
+	padding-left: 300px;
+}
+
+.topNav{
+	height: 150px;
+	background: url(../img/logo2.svg) #00CB53 center center no-repeat;
+	background-size: contain;
+}
+
+.cNav{
+	background: #00953E !important;
+}
+
+.flex{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -18,8 +38,26 @@ body{
 	width: 100%;
 }
 
-section{
-	padding: 5%;
+.txtShadow{
+	text-shadow: 0px 0px 10px black, -1px -1px 10px black;
+	font-size: 20px !important;
+}
+
+.main{
+	height: 100vh;
+	width: 100vh;
+	background: blue;
+}
+
+.logo{
+	height: 300px;
+	opacity: .4;
+}
+
+.content{
+	width: 100%;
+	height: 80%;
+	background: green;
 }
 
 .loader {
@@ -33,7 +71,7 @@ section{
 	border-radius: 50%;
 	width: 120px;
 	height: 120px;
-	animation: spin 2s linear infinite;
+	animation: spin 1s linear infinite;
 }
 
 .bgLoader{
@@ -57,13 +95,35 @@ section{
 	100% { transform: rotate(360deg); }
 }
 
-
+.mTop10{
+	margin-top: 10%;
+}
+.mTop9{
+	margin-top: 9%;
+}
+.mTop8{
+	margin-top: 8%;
+}
 .mTop7{
 	margin-top: 7%;
 }
-
+.mTop6{
+	margin-top: 6%;
+}
 .mTop5{
 	margin-top: 5%;
+}
+.mTop4{
+	margin-top: 4%;
+}
+.mTop3{
+	margin-top: 3%;
+}
+.mTop2{
+	margin-top: 2%;
+}
+.mTop1{
+	margin-top: 1%;
 }
 
 .input-field .prefix.active{
@@ -104,6 +164,14 @@ h2{
 
 .bgBlue{
 	background-color: #2e7d32;
+}
+
+.bgMenu{
+	background-color: #E1920B;
+}
+
+.bgSystem{
+	background-color: #3FD17C;
 }
 
 .fTitle{
@@ -191,5 +259,11 @@ h2{
 
 	.pButtons{
 		margin-top: 10%;
+	}
+}
+
+@media only screen and (max-width : 992px) {
+	header, main, footer {
+		padding-left: 0;
 	}
 }

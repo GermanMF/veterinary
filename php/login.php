@@ -1,4 +1,5 @@
 <?php
+date_default_timezone_set('America/Mexico_City');
 
 switch ($_GET['case']) {
 	case 1:
@@ -22,12 +23,21 @@ function login(){
 		$state -> execute();
 
 		if($state -> fetch() == 1){
+			//If the statement is not closed we can not use another
+			$state ->close();
+
+			$state = $conex -> prepare("UPDATE usuario SET fechaLog = ? WHERE nombre = ?");
+			$state -> bind_param('ss',$date,$name);
+
+			$name = utf8_decode($_POST['name']);
+			$date = date('Y-m-d H:i:s');
+			$state ->execute();
 			echo '1';
 		}
 		else{
+			$state -> close();
 			echo '2';
 		}
-		$state -> close();
 		$conex -> close();
 	}
 }
