@@ -11,8 +11,8 @@
 							<img class="logo" src="../img/paw2.svg">
 						</div>
 						<a href="#!img"><img class="circle" src="../img/sofia.jpeg"></a>
-						<a href="#!welcome"><span class="txtShadow name ">Bienvenido(a),</span></a>
-						<a href="#!user"><span class="txtShadow email ">Sofia</span></a>
+						<span class="txtShadow name ">Bienvenido(a),</span>
+						<span class="txtShadow email ">Sofia</span>
 					</div>
 				</li>
 				<li><a class="subheader">Sistema</a></li>
@@ -96,7 +96,7 @@
 		</nav>
 	</header>
 	<main>	
-		<div class="containerI">
+		<div class="contFrame">
 			<iframe src="../iframe/prop.php" frameborder="0"></iframe>
 		</div>
 	</main>
