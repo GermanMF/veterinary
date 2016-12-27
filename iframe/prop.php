@@ -3,8 +3,8 @@
 <?php include '../php/header.php'; ?>
 <body>
 	<section>
-		<div class="valign-wrapper">
-			<a id="loginr" class="valign waves-effect waves-yellow btn-floating orange darken-3 mTop3"><i class="material-icons">replay</i></a>
+		<div class="center">
+		<a id="loginr" class="posButton waves-effect waves-yellow btn-floating orange darken-3 mTop3"><i class="material-icons">replay</i></a>
 			<h3 class="center">
 				<strong>
 					Registrar
@@ -23,11 +23,11 @@
 			</div>
 
 			<div class="row">
-				<div class="input-field col s12 m6 l6">
+				<div class="input-field col s6 m6 l6">
 					<label for="apellidoP">Apellido Paterno</label>
 					<input type="text" name="apellidoP" id="apellidoP">
 				</div>
-				<div class="input-field col s12 m6 l6">
+				<div class="input-field col s6 m6 l6">
 					<label for="apellidoM">Apellido Materno</label>
 					<input type="text" name="apellidoM" id="apellidoM">
 				</div>

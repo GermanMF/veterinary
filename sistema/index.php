@@ -112,7 +112,7 @@
 <?php include '../php/footer.php'; ?>
 <script>
 	$('.button-collapse').sideNav();
-
+	// alert('Height: '+$(window).height()+'\nWidth: '+$(window).width());
 	// var $iframes = $("iframe");
 	// $iframes.each(function(){
 	// 	$(this).data("ratio",this.height/this.width).removeAttr("width").removeAttr("height");
