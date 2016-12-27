@@ -96,14 +96,15 @@
 		</nav>
 	</header>
 	<main>	
-		<div class="contFrame">
-			<iframe src="../iframe/prop.php" frameborder="0"></iframe>
-		</div>
+		<!-- <div class="contFrame">
+			<iframe id="frame" src="../iframe/prop.php" frameborder="0"></iframe>
+		</div> -->
+		<?php include '../iframe/prop.php';?>
 	</main>
 	<footer class="bgMenu">
 		<div class="footer-copyright">
 			<div class="container">
-				© 2014 Copyright Magic Pets
+				© 2016 Copyright Magic Pets
 				<a class="grey-text text-lighten-4 right" href="https://www.facebook.com/german.martinezfragoso">Site made by  Germán Martínez Fragoso</a>
 			</div>
 		</div>
@@ -111,8 +112,27 @@
 </body>
 <?php include '../php/footer.php'; ?>
 <script>
-	$('.button-collapse').sideNav();
-	// alert('Height: '+$(window).height()+'\nWidth: '+$(window).width());
+	$(document).ready(function(){
+		$('.button-collapse').sideNav();
+		// $('iframe').on('load resize', function(){
+		// 	resFrame();
+		// 	$(window).resize(function(){
+		// 		resFrame();
+		// 	})
+		// });
+	});
+
+	// function resFrame(){
+	// 	$('iframe').css('height', $('iframe').contents().height());
+	// 	if($(window).height() < $('iframe').contents().height()){
+	// 		// $('footer').css('');
+	// 	}
+	// 	else{
+	// 		$('footer').css('margin-top', $('iframe').contents().height() - $(window).height());
+	// 	}
+	// }
+
+		// alert('Height: '+$(window).height()+'\nWidth: '+$(window).width());
 	// var $iframes = $("iframe");
 	// $iframes.each(function(){
 	// 	$(this).data("ratio",this.height/this.width).removeAttr("width").removeAttr("height");

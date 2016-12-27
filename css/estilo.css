@@ -16,31 +16,23 @@ section{
 	padding: 5%;
 }
 
-header, main, footer {
+header, main, footer, .posButton {
 	padding-left: 300px;
 }
 
-.contFrame{
+/*.contFrame{
 	position: relative;
 	height: 100vh;
 }
 
-/*.container-16x9{
-	padding-bottom: 56.25%;
-}
-
-.container-4x3{
-	padding-bottom: 75%;
-}
-*/
-.contFrame iframe{
+.pSidesFrame{
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100vh;
+	height: 0;
 }
-
+*/
 
 .topNav{
 	height: 150px;
@@ -115,11 +107,6 @@ header, main, footer {
 @keyframes spin {
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
-}
-
-.posButton{
-	position: absolute!important;
-	left: 10%;
 }
 
 .mTop10{
@@ -291,20 +278,20 @@ h2{
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-	.contFrame iframe{
+	.pSidesFrame{
 		padding-left: 0%;
 		padding-right: 0%;
-		height: 110vh;
+		/*height: 110vh;*/
 	}
 
 	.contFrame{
-		margin-bottom: 10%;
+		/*margin-bottom: 10%;*/
 	}
 }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (min-width : 480px) {
-	.contFrame iframe{
+	.pSidesFrame{
 		padding-left: 10%;
 		padding-right: 10%;
 	}
@@ -312,7 +299,7 @@ h2{
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.contFrame iframe{
+	.pSidesFrame{
 		padding-left: 20%;
 		padding-right: 20%;
 	}
@@ -320,7 +307,7 @@ h2{
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-	.contFrame iframe{
+	.pSidesFrame{
 		padding-left: 25%;
 		padding-right: 25%;
 	}
@@ -328,18 +315,18 @@ h2{
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-	.contFrame iframe{
+	.pSidesFrame{
 		padding-left: 30%;
 		padding-right: 30%;
 	}
 }
 
 @media only screen and (min-width : 1500px) {
-	.contFrame iframe{
-		height: 100vh;
+	.pSidesFrame{
+		/*height: 100vh;*/
 	}
 	.contFrame{
-		margin-bottom: 0%;
+		/*margin-bottom: 0%;*/
 	}
 }
 
