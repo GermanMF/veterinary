@@ -1,4 +1,12 @@
-	<div class="pSidesFrame">
+<style type="text/css">
+    [type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after 
+    {
+        background-color:#ef6c00;
+        border: 2px solid #ef6c00;
+    }
+</style>
+<div class="pSidesFrame">
 		<section>
 			<div class="center">
 				<div class="fixed-action-btn">
@@ -32,7 +40,7 @@
                     <div class="input-field col s6 m6 l6">
                         <br>
                             <p>
-                                <input  name="masc" type="radio" id="gato" />
+                                <input name="masc" type="radio" id="gato" />
                                 <label for="gato">Gato</label>
                             </p>
 					</div>
