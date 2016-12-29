@@ -1,11 +1,3 @@
-<style type="text/css">
-    [type="radio"]:checked + label:after,
-    [type="radio"].with-gap:checked + label:after 
-    {
-        background-color:#ef6c00;
-        border: 2px solid #ef6c00;
-    }
-</style>
 <div class="pSidesFrame">
 		<section>
 			<div class="center">
@@ -75,6 +67,7 @@
                     <div class="input-field col s12" style="padding-top: 5%;">
                         <select class="browser-default" name="raza" id="raza" required>
                             <option value="" disabled="disabled" selected="selected">Seleccione una raza</option>
+                            <option value=""> </option>
                         </select>
                     </div>
                 </div>
@@ -84,7 +77,8 @@
                     </div>
                     <div class="input-field col s12" style="padding-top: 5%;" >
                         <select class="browser-default " name="color" id="color" required>
-                            <option value="" disabled="disabled" selected="selected">seleccione un color</option>
+                            <option value="" disabled="disabled" selected="selected">Seleccione un color</option>
+                            <option value=""> </option>
                         </select>
                     </div>
                 </div>
