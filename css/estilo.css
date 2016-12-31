@@ -20,20 +20,6 @@ header, main, footer, .posButton {
 	padding-left: 300px;
 }
 
-/*.contFrame{
-	position: relative;
-	height: 100vh;
-}
-
-.pSidesFrame{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 0;
-}
-*/
-
 .topNav{
 	height: 150px;
 	background: url(../img/logo2.svg) #00CB53 center center no-repeat;
@@ -157,7 +143,7 @@ label.active{
 	display: none;
 }
 
-h2{
+h2, h3{
 	font-family: "PaytoneOne";
 }
 
