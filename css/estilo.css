@@ -6,7 +6,7 @@
 }
 
 
-*{
+h1,h2,h3,h4,h5,p,a,label,input,span.caret{
 	margin:0;
 	padding: 0;
 	color: #fff !important;
@@ -20,6 +20,7 @@ section{
 header, main, footer, .posButton {
 	padding-left: 300px;
 }
+
 
 .topNav{
 	height: 150px;
@@ -136,9 +137,6 @@ header, main, footer, .posButton {
 	box-shadow: #ef6c00!important;
 }
 
-label.active{
-	color: #ef6c00!important;	
-}
 
 .hid{
 	display: none;
@@ -243,25 +241,30 @@ h2, h3{
 	padding-top: 1%;
 }
 
+.pZero{
+	padding: 0!important;
+}
+
 [type="radio"]:checked + label:after,
     [type="radio"].with-gap:checked + label:after 
     {
         background-color:#ef6c00 !important;
         border: 2px solid #ef6c00 !important;
     }
- .browser-default
-{
-    color: #fff !important;
+
+span.character-counter{
+	color:#ddd;
 }
-select.browser-default
-{
-    background-color: #ffab91;
-    width: 100%;
-    padding: 5px;
-    border: 1px solid #ffab91;
-    border-radius: 2px;
-    height: 3rem;
+
+.flatButton{
+	box-shadow: 0 0 0 0!important;
+	background: rgba(0,0,0,0)!important;
 }
+
+.btnCh{
+	padding: 0 0.5rem!important;
+}
+
 @media(min-width: 320px) and (max-width: 768px){
 	
 	.fSize4{

@@ -96,7 +96,7 @@
 		</nav>
 	</header>
 	<main>	
-		<?php include '../forms/prop.php'; ?>
+		<?php include '../iframe/mascota.php'; ?>
 	</main>
 	<footer class="bgMenu">
 		<div class="footer-copyright">
@@ -113,6 +113,12 @@
 <script>
 	$(document).ready(function(){
 		$('.button-collapse').sideNav();
+		$('select').material_select();
+		$('.datepicker').pickadate({
+			selectMonths: true,
+			selectYears: 15
+		});
+		 $('input#input_text, textarea#observ').characterCounter();
 	});
 </script>
 </html>
