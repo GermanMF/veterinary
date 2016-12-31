@@ -5,6 +5,7 @@
 	src: url(../fonts/PaytoneOne.ttf);
 }
 
+
 *{
 	margin:0;
 	padding: 0;
@@ -242,7 +243,25 @@ h2, h3{
 	padding-top: 1%;
 }
 
-
+[type="radio"]:checked + label:after,
+    [type="radio"].with-gap:checked + label:after 
+    {
+        background-color:#ef6c00 !important;
+        border: 2px solid #ef6c00 !important;
+    }
+ .browser-default
+{
+    color: #fff !important;
+}
+select.browser-default
+{
+    background-color: #ffab91;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ffab91;
+    border-radius: 2px;
+    height: 3rem;
+}
 @media(min-width: 320px) and (max-width: 768px){
 	
 	.fSize4{
